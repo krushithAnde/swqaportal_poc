@@ -1,0 +1,1081 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Infosys Qualtity Dash Board</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <link href="bootstrap/css/customize-template.css" rel="stylesheet" />
+    
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    
+    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    
+    <link href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    
+    <link href="Slider/morris.css" rel="stylesheet" />
+    <link href="Slider/daterangepicker-bs3.css" rel="stylesheet" />
+    <link href="Slider/jquery-jvectormap-1.2.2.css" rel="stylesheet" />
+    <link href="dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+
+    
+    <link href="dist/css/skins/skin-blue.min.css" rel="stylesheet" type="text/css" />
+
+    
+    <link href="Slider/jquery-ui.css" rel="stylesheet" />
+    <link href="Slider/jquery.nouislider.min.css" rel="stylesheet" />
+    <link href="Slider/jquery.nouislider.pips.min.css" rel="stylesheet" />
+    <link href="Slider/prism.css" rel="stylesheet" />
+
+    <link href="HeaderCSS/master.4.3.4.css" rel="stylesheet" />
+    <script src="HeaderCSS/cjo5ipu.js"></script>
+    <script type="text/javascript">
+        try {
+            Typekit.load();
+        } catch (e) { }
+    </script>
+    <script src="HeaderCSS/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript">
+        function load_content(div, obj, val) {
+            $("div.content-wrapper").hide();
+            document.getElementById(div).style.display = "block";
+        }
+    </script>
+    <script>
+        function showtable() {
+            $("#demandTable1").toggle();
+        }
+    </script>
+
+</head>
+
+
+<body class="skin-blue">
+    <div class="wrapper">
+
+        <!-- Main Header -->
+        <div id="header">
+            <div class="">
+                <div class="menu">
+                    <a href="Index.html" class="logo">
+                        <span class="hidden-lg hidden-md"><img src="images/SWA_07.jpg" /></span>
+                        <span class="hidden-xs hidden-sm"><img src="images/SWA.png" class="vendorlogo" /></span>
+                    </a>
+                    <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+                    </a>
+                    <a class="menu-item" href="home.html">
+                        <img class="menuimage" src="images/Menu/Home.png" />
+                        <span class="info-box-text">Home</span>
+                    </a>
+                    <a class="menu-item" href="Orgchart.html">
+                        <img class="menuimage" src="images/Menu/orgchart.png" />
+                        <span class="info-box-text">Org Chart</span>
+                    </a>
+                    <a class="menu-item" href="OperatingMetrics.html">
+                        <!--<span class="icon i-community"> </span><span class="label">Community</span>-->
+                        <img class="menuimage" src="images/Menu/Performance.png" />
+                        <span class="info-box-text">Operational <br /> Reports </span>
+                    </a>
+                    <a class="menu-item menu-item-app" href="ServiceLevelMetrics.html">
+                        <img class="menuimage" src="images/Menu/DemandManagement.png" />
+                        <span class="info-box-text">Service Level<br /> Reports</span>
+                    </a>
+                    <a class="menu-item menu-item-enterprise" href="FinancialMetrics.html">
+                        <img class="menuimage" src="images/Menu/Timesheet.png" />
+                        <span class="info-box-text">Financial <br /> Reports </span>
+                    </a>
+                    <a class="menu-item menu-item-academy" href="Academy.html">
+                        <img class="menuimage" src="images/Menu/Academy.png" />
+                        <span class="info-box-text">Southwest <br /> Academy</span>
+                    </a>
+                    <a class="menu-item menu-item-awards hidden-xs" href="awardsappreciations.html">
+                        <img class="menuimage" src="images/Menu/Awards.png" />
+                        <span class="info-box-text">Awards &<br /> Appreciations</span>
+                    </a>
+                    <div class="menu-item hidden-sm hidden-xs">
+                        <img src="images/infosys.png" class="right-image" />
+                    </div>
+                    <div class="menu-item user user-menu  hidden-sm hidden-xs" style="border-right: 0px; padding: 0px;">
+                        <div style="margin-top: 20px;" class="hoveruser">
+                            
+                            <a href="#" class="user user-menu dropdown-toggle" data-toggle="dropdown">
+                                
+                                <img src="images/Kshithiji.jpg" class="user-image" alt="User Image" />
+                                
+                                <span class="hidden-xs">Kshitij Kamal</span>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="menu-select">
+                        <form>
+                            <select onchange="location = this.options[this.selectedIndex].value;">
+                                <option value="/">Home</option>
+                                <option value="Orgchart.html">Org Chart</option>
+
+                                <option value="OperatingMetrics.html">Operating Metrics </option>
+
+                                <option value="ServiceLevelMetrics.html">Service Level Metrics</option>
+
+                                <option value="FinancialMetrics.html">Financial Metrics</option>
+
+                                <option value="Academy.html">Southwest Academy</option>
+
+                                <option value="awardsappreciations.html">Awards & Appreciations</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <div class="dropdown dropdown-about">
+
+                </div>
+                <div class="dropdown dropdown-developer">
+
+                </div>
+                <div class="dropdown dropdown-community">
+
+                </div>
+                <div class="dropdown dropdown-app">
+
+                </div>
+                <div class="dropdown dropdown-enterprise">
+
+                </div>
+                <script type="text/javascript">
+                    function activateDropDown(target, height) {
+                        var animate = true;
+                        var prefix = '.dropdown-' + target;
+                        var menuPrefix = '.menu-item-' + target;
+                        var menu = $(prefix);
+                        var height = 0;
+                        height = $(prefix + ' .inner').height() + 4 + 4 + 8;
+
+                        $(prefix + ', ' + '.menu-item-' + target).hover(function (r) {
+                            var item = $(this);
+                            if (item[0].className && item[0].className.indexOf('menu') > -1) {
+                                var left = item.position().left;
+                                menu.css('left', left + 'px');
+                                menu.clearQueue().animate({
+                                    height: height + 'px'
+                                }, 200);
+                                $(menuPrefix).addClass('active')
+                            }
+                            animate = false;
+                            setTimeout(function () {
+                                animate = true;
+                            }, 1);
+                            menu.css('display', 'block');
+                        }, function (r) {
+                            setTimeout(function () {
+                                if (animate) {
+                                    menu.animate({
+                                        height: '0px'
+                                    }, 200);
+                                    $(menuPrefix).removeClass('active');
+                                }
+                            }, 0);
+                        });
+                    }
+
+                    activateDropDown('Home');
+
+                    activateDropDown('Orgchart');
+
+                    activateDropDown('ProgramMetrics');
+
+                    activateDropDown('DemandManagement');
+
+                    activateDropDown('Timesheet & Invoices');
+
+                    activateDropDown('Academy');
+
+                    activateDropDown('Awards & Appreciations');
+                </script>
+            </div>
+        </div>
+
+        
+
+
+        <aside class="main-sidebar">
+            <section class="sidebar">
+                
+                <ul class="sidebar-menu">
+                    <li class="header">Operational Reports</li>
+                    <li class="treeview">
+                        <a href="#"><span>Operating Metrics</span> <i class="fa fa-angle-left pull-right"></i></a>
+                        <ul class="treeview-menu">
+                            <li onclick="load_content('quarterlydeploymentreport', this);">
+                                <a href="#">Deployment Status Report</a>
+                            </li>
+
+							<li>
+                                <a>Workload Mix Report</a>
+                            </li>
+                            <li>
+                                <a>Supplier Personnel Report</a>
+                            </li>
+                            <li onclick="load_content('monthlytimereport', this);">
+                                <a href="#">Monthly Time Report</a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+                    <li class="treeview" >
+                        <a href="#" ><span>Resource Report</span> <i class="fa fa-angle-left pull-right"></i></a>
+                        <ul class="treeview-menu">
+                    <li class="treeview" >
+                        <a href="/demand"><span>Resource Forecast Report</span> <i class="fa fa-angle-left pull-right"></i></a>
+                        <ul class="treeview-menu">
+                            <li onclick="load_content('resourceforecasebyservice', this);">
+                                <a href="#">By Service</a>
+                            </li>
+                            <li onclick="load_content('resourceforecasebysite', this);">
+                                <a href="#">By Site</a>
+                            </li>
+                            <li onclick="load_content('resourceforecasebyskill', this);">
+                                <a href="#">By Skills</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="treeview">
+                        <a href="/demand"><span>Resource Movement</span> <i class="fa fa-angle-left pull-right"></i></a>
+                        <ul class="treeview-menu">
+                            <li onclick="load_content('summary', this);">
+                                <a href="#">Summary</a>
+                            </li>
+                            
+                            <li >
+                                <a>Details</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="/demand"><span>Demand Metrics</span> <i class="fa fa-angle-left pull-right"></i></a>
+                        <ul class="treeview-menu">
+                            <li onclick="load_content('demandraisedfulfilled', this);">
+                                <a href="#">Demand Raised vs fulfilled</a>
+                            </li>
+                            <li>
+                                <a href="/demand"><span>Demand Avg Lead Time</span> <i class="fa fa-angle-left pull-right"></i></a>
+                                <ul class="treeview-menu">
+                                    <li>
+                                        <a>Onsite</a>
+                                    </li>
+                                    <li>
+                                        <a>Offshore</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="/demand"><span>Value Metrics</span> <i class="fa fa-angle-left pull-right"></i></a>
+                        <ul class="treeview-menu">
+                            <!--<li>
+                                <a>Reduction of tickets</a>
+                            </li>-->
+                            <li onclick="load_content('productivityimprovement', this);">
+                                <a href="#">Productivity Improvement</a>
+                            </li>
+                            <li onclick="load_content('solutionsinnovations', this);">
+                                <a href="#">Solutions & Innovations</a>
+                            </li>
+                            <li>
+                                <a>Engagement scorecards</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+          
+            </section>
+        </aside>
+
+
+        
+        <div class="content-wrapper">
+            <section class="content-header"></section>
+            <section class="content">
+                <div>
+                    <img src="images/Dashboard.jpg" class="dashboardimg" />
+                </div>
+            </section>
+        </div>
+
+        
+        <div class="content-wrapper" id="quarterlydeploymentreport" style="display:none;">
+            <section class="content-header"></section>
+            <section class="content">
+                <!-- Header  Row -->
+                <div class="row">
+                    <div class="col-centered">
+                        <p class="text-center labelsubhead">Quarterly Deployment Report</p>
+                    </div>
+                </div>
+               
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <div class="row">
+
+                           <div class="col-md-3">
+                                <span>Quarter &nbsp;</span>
+                                <div>
+                                    <select id="select4">
+
+                                        <option>Q1-15</option>
+                                        <option>Q2-15</option>
+                                        <option>Q3-15</option>
+                                        <option>Q4-15</option>
+                                        <option>Q1-16</option>
+                                        <option>Q2-16</option>
+                                        <option>Q3-16</option>
+                                        <option>Q4-16</option>
+                                        
+
+                                    </select>
+                                </div>
+                            </div> 
+
+
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <img src="images/QDeploymentStatusReport.png" alt="P1 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                        <!--<img src="images/responsetimeadherancep2.png" alt="P2 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />-->
+                    </div>
+                </div>
+                
+                <div class="row">
+                    
+                    <div class="col-sm-8 col-sm-offset-1 col-md-9 col-md-offset-2">
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        
+        <div class="content-wrapper" id="workloadmixreport" style="display:none;">
+            <section class="content-header"></section>
+            <section class="content">
+                
+                <div class="row">
+                    <div class="col-centered">
+                        <p class="text-center labelsubhead">Work Load Mix Report</p>
+                    </div>
+                </div>
+                <!--  Selection Row-->
+                <div class="row">
+                <div class="col-md-1"></div>
+                   <div class="sliderwrapper">
+								<label
+									class="lblstartdate">
+									Start Date <br /> <span class="start spandate">01-01-2015</span>
+								</label>
+								<div class="quick" style="margin-left: 175px; margin-top: -5px;">
+									<div class="slider"></div>
+								</div>
+								<label
+									class="lblenddate">
+									End Date <br /> <span class="end spandate">06-30-2015</span>
+								</label>
+							</div>
+
+                        </div>
+
+                   
+                
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <img src="images/WorkloadMixReport.png" alt="P1 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                       
+                    </div>
+                </div>
+                
+                <div class="row">
+                
+                    <div class="col-sm-8 col-sm-offset-1 col-md-9 col-md-offset-2">
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        
+        <div class="content-wrapper" id="monthlytimereport" style="display:none;">
+            <section class="content-header"></section>
+            <section class="content">
+                <!-- Header  Row -->
+                <div class="row">
+                    <div class="col-centered">
+                        <p class="text-center labelsubhead">Time Sheets</p>
+                    </div>
+                </div>
+              
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Year &nbsp;</span>
+                                <div>
+                                    <select id="select3">
+                                        <option>2015</option>
+                                        <option>2016</option>
+                                        <option>2017</option>
+                                        <option>2018</option>
+                                        <option>2019</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            
+
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <table class="myTable1" style="color: black; font-size: 14px; text-align: center;">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="#">Jan</a>
+                                    </td>
+                                    <td style="border-right: none;">
+                                        <a href="#">Jul</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#">Feb</a>
+                                    </td>
+                                    <td style="border-right: none;">
+                                        <a href="#">Aug</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a style="color: blue;" href="./worksheets/March.xlsx">Mar</a>
+                                    </td>
+                                    <td style="border-right: none;">
+                                        <a href="#">Sep</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a style="color: blue;" href="./worksheets/April.xlsx">Apr</a>
+                                    </td>
+                                    <td style="border-right: none;">
+                                        <a href="#">Oct</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#">May</a>
+                                    </td>
+                                    <td style="border-right: none;">
+                                        <a href="#">Nov</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-bottom: none;">
+                                        <a>Jun</a>
+                                    </td>
+                                    <td style="border-right: none; border-bottom: none;">
+                                        <a>Dec</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                </div>
+                
+                <div class="row">
+                
+                    <div class="col-sm-8 col-sm-offset-1 col-md-9 col-md-offset-2">
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+
+        
+        <div class="content-wrapper" id="productivityimprovement" style="display:none;">
+            <section class="content-header"></section>
+            <section class="content">
+                <!-- Header  Row -->
+                <div class="row">
+                    <div class="col-centered">
+                        <p class="text-center labelsubhead">Productivity Improvement</p>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <div class="row">
+
+                           <div class="sliderwrapper">
+								<label
+									class="lblstartdate">
+									Start Date <br /> <span class="start spandate">01-01-2015</span>
+								</label>
+								<div class="quick" style="margin-left: 175px; margin-top: -5px;">
+									<div class="slider"></div>
+								</div>
+								<label
+									class="lblenddate">
+									End Date <br /> <span class="end spandate">06-30-2015</span>
+								</label>
+							</div>
+
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <img src="images/ProductivityImprovement.png" alt="P1 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                        
+                    </div>
+                </div>
+                
+                <div class="row">
+                    
+                    <div class="col-sm-8 col-sm-offset-1 col-md-9 col-md-offset-2">
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        
+        <div class="content-wrapper" id="solutionsinnovations" style="display:none;">
+            <section class="content-header"></section>
+            <section class="content">
+                
+                <div class="row">
+                    <div class="col-centered">
+                        <p class="text-center labelsubhead">Solutions & Innovations </p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <div class="row">
+
+                            <div class="sliderwrapper">
+								<label
+									class="lblstartdate">
+									Start Date <br /> <span class="start spandate">01-01-2015</span>
+								</label>
+								<div class="quick" style="margin-left: 175px; margin-top: -5px;">
+									<div class="slider"></div>
+								</div>
+								<label
+									class="lblenddate">
+									End Date <br /> <span class="end spandate">01-31-2015</span>
+								</label>
+							</div>
+
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <img src="images/SolutionsInnovations.png" alt="P1 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                        
+                    </div>
+                </div>
+                
+                <div class="row">
+                    
+                    <div class="col-sm-8 col-sm-offset-1 col-md-9 col-md-offset-2">
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+
+	
+	
+
+
+
+
+
+        
+        <div class="content-wrapper" id="resourceforecasebyservice" style="display:none;">
+            <section class="content-header"></section>
+            <section class="content">
+                
+                <div class="row">
+                    <div class="col-centered">
+                        <p class="text-center labelsubhead">Resource forcast by Service </p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Application Product Family &nbsp;</span>
+                                <div>
+                                    <select id="select3">
+                                        <option>All</option>
+                                        <option>Aircraft Operations</option>
+                                        <option>Airport Operations</option>
+                                        <option>Crew</option>
+                                        <option>CRM & Marketing</option>
+                                        <option>Customer Service Operations</option>
+                                        <option>Data</option>
+                                        <option>Dev Solutions</option>
+                                        <option>Enterprise Management</option>
+                                        <option>Enterprise Management - BI</option>
+                                        <option>Interactive Customer</option>
+                                        <option>Maintenance</option>
+                                        <option>Network and Revenue Management</option>
+                                        <option>Ops Solutions</option>
+                                        <option>Reservation Services</option>
+                                        <option>Sales and Distribution</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <span>Mode &nbsp;</span>
+                                <div>
+                                    <select id="select4">
+                                        <option>Quarterly</option>
+                                        <option>Monthly</option>
+                                    </select>
+                                </div>
+                            </div>
+                           <div class="sliderwrapper">
+								<label
+									class="lblstartdate">
+									Start Date <br /> <span class="start spandate">01-01-2015</span>
+								</label>
+								<div class="quick" style="margin-left: 175px; margin-top: -5px;">
+									<div class="slider"></div>
+								</div>
+								<label
+									class="lblenddate">
+									End Date <br /> <span class="end spandate">06-30-2015</span>
+								</label>
+							</div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Content Row  -->
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <img src="images/resourceforecastbyservice.png" alt="Resource forcast by Service " style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                        <!--<img src="images/avgresolutiontimep2.png" alt="P2 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />-->
+                    </div>
+                </div>
+                <!-- Content Row 2  -->
+                <div class="row">
+                    <!--<div class="col-sm-2"></div>-->
+                    <div class="col-sm-8 col-sm-offset-1 col-md-9 col-md-offset-2">
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        <!-- Resource forecast by Site -->
+        <div class="content-wrapper" id="resourceforecasebysite" style="display:none;">
+            <section class="content-header"></section>
+            <section class="content">
+                <!-- Header  Row -->
+                <div class="row">
+                    <div class="col-centered">
+                        <p class="text-center labelsubhead">Resource forcast by Site </p>
+                    </div>
+                </div>
+                <!--  Selection Row-->
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Application Product Family &nbsp;</span>
+                                <div>
+                                    <select id="select3">
+                                        <option>All</option>
+                                        <option>Aircraft Operations</option>
+                                        <option>Airport Operations</option>
+                                        <option>Crew</option>
+                                        <option>CRM & Marketing</option>
+                                        <option>Customer Service Operations</option>
+                                        <option>Data</option>
+                                        <option>Dev Solutions</option>
+                                        <option>Enterprise Management</option>
+                                        <option>Enterprise Management - BI</option>
+                                        <option>Interactive Customer</option>
+                                        <option>Maintenance</option>
+                                        <option>Network and Revenue Management</option>
+                                        <option>Ops Solutions</option>
+                                        <option>Reservation Services</option>
+                                        <option>Sales and Distribution</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <span>Mode &nbsp;</span>
+                                <div>
+                                    <select id="select4">
+                                        <option>Quarterly</option>
+                                        <option>Monthly</option>
+                                    </select>
+                                </div>
+                            </div>
+                           <div class="sliderwrapper">
+								<label
+									class="lblstartdate">
+									Start Date <br /> <span class="start spandate">01-01-2015</span>
+								</label>
+								<div class="quick" style="margin-left: 175px; margin-top: -5px;">
+									<div class="slider"></div>
+								</div>
+								<label
+									class="lblenddate">
+									End Date <br /> <span class="end spandate">06-30-2015</span>
+								</label>
+							</div>
+
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <img src="images/resourceforecastbysite.png" alt="Resource forcast by Service " style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                        
+                    </div>
+                </div>
+                
+                <div class="row">
+                    
+                    <div class="col-sm-8 col-sm-offset-1 col-md-9 col-md-offset-2">
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        
+        <div class="content-wrapper" id="resourceforecasebyskill" style="display:none;">
+            <section class="content-header"></section>
+            <section class="content">
+                
+                <div class="row">
+                    <div class="col-centered">
+                        <p class="text-center labelsubhead">Resource forcast by Skill </p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Application Product Family &nbsp;</span>
+                                <div>
+                                    <select id="select3">
+                                        <option>All</option>
+                                        <option>Aircraft Operations</option>
+                                        <option>Airport Operations</option>
+                                        <option>Crew</option>
+                                        <option>CRM & Marketing</option>
+                                        <option>Customer Service Operations</option>
+                                        <option>Data</option>
+                                        <option>Dev Solutions</option>
+                                        <option>Enterprise Management</option>
+                                        <option>Enterprise Management - BI</option>
+                                        <option>Interactive Customer</option>
+                                        <option>Maintenance</option>
+                                        <option>Network and Revenue Management</option>
+                                        <option>Ops Solutions</option>
+                                        <option>Reservation Services</option>
+                                        <option>Sales and Distribution</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <span>Mode &nbsp;</span>
+                                <div>
+                                    <select id="select4">
+                                        <option>Quarterly</option>
+                                        <option>Monthly</option>
+                                    </select>
+                                </div>
+                            </div>
+                           <div class="sliderwrapper">
+								<label
+									class="lblstartdate">
+									Start Date <br /> <span class="start spandate">01-01-2015</span>
+								</label>
+								<div class="quick" style="margin-left: 175px; margin-top: -5px;">
+									<div class="slider"></div>
+								</div>
+								<label
+									class="lblenddate">
+									End Date <br /> <span class="end spandate">06-30-2015</span>
+								</label>
+							</div>
+
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <img src="images/resourceforecastbyskill.png" alt="Resource forcast by Service " style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                        
+                    </div>
+                </div>
+                
+                <div class="row">
+                    
+                    <div class="col-sm-8 col-sm-offset-1 col-md-9 col-md-offset-2">
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        
+        <div class="content-wrapper" id="demandraisedfulfilled" style="display:none;">
+            <section class="content-header"></section>
+            <section class="content">
+                
+                <div class="row">
+                    <div class="col-centered">
+                        <p class="text-center labelsubhead">Demand Raised Vs Fulfilled</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Application Product Family &nbsp;</span>
+                                <div>
+                                    <select id="select3">
+                                        <option>All</option>
+                                        <option>Aircraft Operations</option>
+                                        <option>Airport Operations</option>
+                                        <option>Crew</option>
+                                        <option>CRM & Marketing</option>
+                                        <option>Customer Service Operations</option>
+                                        <option>Data</option>
+                                        <option>Dev Solutions</option>
+                                        <option>Enterprise Management</option>
+                                        <option>Enterprise Management - BI</option>
+                                        <option>Interactive Customer</option>
+                                        <option>Maintenance</option>
+                                        <option>Network and Revenue Management</option>
+                                        <option>Ops Solutions</option>
+                                        <option>Reservation Services</option>
+                                        <option>Sales and Distribution</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                           <div class="sliderwrapper">
+								<label
+									class="lblstartdate">
+									Start Date <br /> <span class="start spandate">01-01-2015</span>
+								</label>
+								<div class="quick" style="margin-left: 175px; margin-top: -5px;">
+									<div class="slider"></div>
+								</div>
+								<label
+									class="lblenddate">
+									End Date <br /> <span class="end spandate">06-30-2015</span>
+								</label>
+							</div>
+
+                        </div>
+
+                    </div>
+                </div>
+                
+                 <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <img src="images/demandraisedvsfulfilled.png" alt="Demand raised vs fulfilled " style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                        
+                    </div>
+                </div>
+                
+                
+                <div class="row">
+                    
+                    <div class="col-sm-8 col-sm-offset-1 col-md-9 col-md-offset-2">
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+		
+		<div class="content-wrapper" id="summary"
+			style="display: none;">
+			<section class="content-header"></section>
+			<section class="content">
+				
+				<div class="row">
+					<div class="col-centered">
+						<p class="text-center labelsubhead">Summary
+						</p>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-12 col-sm-offset-1">
+						<div class="row">
+							<div class="col-md-3">
+								<span>Application Product Family &nbsp;</span>
+								<div>
+									<select id="select3">
+										<option>All</option>
+										<option>Aircraft Operations</option>
+										<option>Airport Operations</option>
+										<option>Crew</option>
+										<option>CRM & Marketing</option>
+										<option>Customer Service Operations</option>
+										<option>Data</option>
+										<option>Dev Solutions</option>
+										<option>Enterprise Management</option>
+										<option>Enterprise Management - BI</option>
+										<option>Interactive Customer</option>
+										<option>Maintenance</option>
+										<option>Network and Revenue Management</option>
+										<option>Ops Solutions</option>
+										<option>Reservation Services</option>
+										<option>Sales and Distribution</option>
+									</select>
+								</div>
+							</div>
+
+
+
+							<div class="sliderwrapper">
+								<label class="lblstartdate"> Start Date <br /> <span
+									class="start spandate">01-01-2015</span>
+								</label>
+								<div class="quick" style="margin-left: 175px; margin-top: -5px;">
+									<div class="slider"></div>
+								</div>
+								<label class="lblenddate"> End Date <br /> <span
+									class="end spandate">06-30-2015</span>
+								</label>
+							</div>
+
+
+						</div>
+
+					</div>
+				</div>
+				
+				
+				<div class="row">
+					<div class="col-md-12 col-sm-offset-1">
+						<img src="images/summary.png"
+							alt="Summary "
+							style="height: 100%; margin-top: 10px; padding-top: 15px; padding-right: 20px" />
+						
+					</div>
+				</div>
+				
+				<div class="row">
+					
+					<div class="col-sm-8 col-sm-offset-1 col-md-9 col-md-offset-2">
+
+					</div>
+				</div>
+
+			</section>
+		</div>
+
+		
+        <footer class="main-footer">
+            
+            <strong>Copyright &copy; 2015 <a href="www.infosys.com">Infosys Technologies</a>.</strong> All rights reserved.
+        </footer>
+
+    </div>
+   
+    <script src="dist/jQuery/jQuery-2.1.3.min.js"></script>
+    
+    <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="bootstrap/js/bootstrap-datepicker.js" type="text/javascript"></script>
+    
+    <script src="dist/js/app.min.js" type="text/javascript"></script>
+
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //$('#startdate').datepicker();
+            //$('#enddate').datepicker();
+            //$('#startdate').datepicker();
+            //$('#enddate').datepicker();
+            //$('#startdate').datepicker();
+            //$('#enddate').datepicker();
+            $('#rp4startdate').datepicker();
+            $('#rp4enddate').datepicker();
+        });
+    </script>
+
+    <script src="Slider/bootstrap.min.js"></script>
+    <script src="Slider/fastclick.min.js"></script>
+    
+    <script src="Slider/jquery.sparkline.min.js"></script>
+    <script src="Slider/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="Slider/jquery-jvectormap-world-mill-en.js"></script>
+
+    <script src="Slider/daterangepicker.js"></script>
+    <script src="Slider/bootstrap-datepicker.js"></script>
+    <script src="Slider/icheck.min.js"></script>
+    <script src="Slider/jquery.slimscroll.min.js"></script>
+    <script src="Slider/Chart.min.js"></script>
+    <script src="Slider/dashboard2.js"></script>
+
+    <script src="Slider/jquery-ui.js"></script>
+    <script src="Slider/jquery.nouislider.all.js"></script>
+    <script src="Slider/slider.js"></script>
+
+</body>
+
+</html>

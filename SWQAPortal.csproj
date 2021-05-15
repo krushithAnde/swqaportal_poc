@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D95A02F8-4164-4668-B073-78EE5F66D608}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SWQAPortal</RootNamespace>
+    <AssemblyName>SWQAPortal</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="404.html" />
+    <Content Include="Academy.html" />
+    <Content Include="awardsappreciations.html" />
+    <Content Include="bootstrap\css\bootstrap.css" />
+    <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\css\customize-template.css" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="bootstrap\js\bootstrap-datepicker.js" />
+    <Content Include="bootstrap\js\bootstrap.js" />
+    <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="bootstrap\js\npm.js" />
+    <Content Include="dist\css\AdminLTE.css" />
+    <Content Include="dist\css\AdminLTE.min.css" />
+    <Content Include="dist\css\font-awesome.min.css" />
+    <Content Include="dist\css\ionicons.min.css" />
+    <Content Include="dist\css\skins\skin-black.css" />
+    <Content Include="dist\css\skins\skin-black.min.css" />
+    <Content Include="dist\css\skins\skin-blue.css" />
+    <Content Include="dist\css\skins\skin-blue.min.css" />
+    <Content Include="dist\css\skins\skin-green.css" />
+    <Content Include="dist\css\skins\skin-green.min.css" />
+    <Content Include="dist\css\skins\skin-purple.css" />
+    <Content Include="dist\css\skins\skin-purple.min.css" />
+    <Content Include="dist\css\skins\skin-red.css" />
+    <Content Include="dist\css\skins\skin-red.min.css" />
+    <Content Include="dist\css\skins\skin-yellow.css" />
+    <Content Include="dist\css\skins\skin-yellow.min.css" />
+    <Content Include="dist\css\skins\_all-skins.css" />
+    <Content Include="dist\css\skins\_all-skins.min.css" />
+    <Content Include="dist\img\avatar.png" />
+    <Content Include="dist\img\avatar04.png" />
+    <Content Include="dist\img\avatar2.png" />
+    <Content Include="dist\img\avatar3.png" />
+    <Content Include="dist\img\avatar5.png" />
+    <Content Include="dist\img\boxed-bg.jpg" />
+    <Content Include="dist\img\boxed-bg.png" />
+    <Content Include="dist\img\credit\american-express.png" />
+    <Content Include="dist\img\credit\cirrus.png" />
+    <Content Include="dist\img\credit\mastercard.png" />
+    <Content Include="dist\img\credit\mestro.png" />
+    <Content Include="dist\img\credit\paypal.png" />
+    <Content Include="dist\img\credit\paypal2.png" />
+    <Content Include="dist\img\credit\visa.png" />
+    <Content Include="dist\img\default-50x50.gif" />
+    <Content Include="dist\img\icons.png" />
+    <Content Include="dist\jQuery\jQuery-2.1.3.min.js" />
+    <Content Include="dist\js\app.js" />
+    <Content Include="dist\js\app.min.js" />
+    <Content Include="dist\js\demo.js" />
+    <Content Include="dist\js\HomeController.js" />
+    <Content Include="dist\js\jquery-1.11.2.min.js" />
+    <Content Include="dist\js\jquery-ui.js" />
+    <Content Include="dist\js\pages\dashboard.js" />
+    <Content Include="dist\js\pages\dashboard2.js" />
+    <Content Include="dist\plugins\fastclick\fastclick.js" />
+    <Content Include="dist\plugins\fastclick\fastclick.min.js" />
+    <Content Include="dist\plugins\slimScroll\jquery.slimscroll.js" />
+    <Content Include="dist\plugins\slimScroll\jquery.slimscroll.min.js" />
+    <Content Include="FinancialMetrics.html" />
+    <Content Include="HeaderCSS\cjo5ipu.js" />
+    <Content Include="HeaderCSS\jquery-1.7.2.min.js" />
+    <Content Include="HeaderCSS\master.4.3.4.css" />
+    <Content Include="Home.html" />
+    <Content Include="images\avgresolutiontimep1.png" />
+    <Content Include="images\avgresolutiontimep2.png" />
+    <Content Include="images\avgresolutiontimep3.png" />
+    <Content Include="images\avgresolutiontimep4.png" />
+    <Content Include="images\avgresponsetimep1.png" />
+    <Content Include="images\avgresponsetimep2.png" />
+    <Content Include="images\avgresponsetimep3.png" />
+    <Content Include="images\avgresponsetimep4.png" />
+    <Content Include="images\AwardsnAppreciations.png" />
+    <Content Include="images\Contracticon.png" />
+    <Content Include="images\criticalbatchcompleted.png" />
+    <Content Include="images\Dashboard.jpg" />
+    <Content Include="images\defectdensity.png" />
+    <Content Include="images\DefectRejectionRatio1.PNG" />
+    <Content Include="images\deliverablescompleted.png" />
+    <Content Include="images\demandraisedvsfulfilled.png" />
+    <Content Include="images\EffortByLocation.png" />
+    <Content Include="images\EffortByLocation_1.png" />
+    <Content Include="images\FunctionalGroup.png" />
+    <Content Include="images\Ideas.png" />
+    <Content Include="images\Incident.png" />
+    <Content Include="images\incidentclosed.png" />
+    <Content Include="images\infosys.png" />
+    <Content Include="images\Kshithiji.jpg" />
+    <Content Include="images\Menu\Academy.png" />
+    <Content Include="images\Menu\Academyold - Copy.png" />
+    <Content Include="images\Menu\Academyold.png" />
+    <Content Include="images\Menu\Awards.png" />
+    <Content Include="images\Menu\DemandManagement.png" />
+    <Content Include="images\Menu\Home-icon.png" />
+    <Content Include="images\Menu\Home.png" />
+    <Content Include="images\Menu\orgchart.png" />
+    <Content Include="images\Menu\Performance.png" />
+    <Content Include="images\Menu\Timesheet.png" />
+    <Content Include="images\Online_Offshore.png" />
+    <Content Include="images\OrgChart.jpg.png" />
+    <Content Include="images\OrgChart.jpg.png.jpg" />
+    <Content Include="images\ProductivityImprovement.png" />
+    <Content Include="images\programDashboard1.png" />
+    <Content Include="images\programDashboard2.png" />
+    <Content Include="images\programDashboard3.png" />
+    <Content Include="images\Projectstatus.png" />
+    <Content Include="images\QDeploymentStatusReport.png" />
+    <Content Include="images\QualityOfIncidents.png" />
+    <Content Include="images\rcacompleted.png" />
+    <Content Include="images\resolutiontimeadherancep1.png" />
+    <Content Include="images\resolutiontimeadherancep2.png" />
+    <Content Include="images\resourceforecastbyservice.png" />
+    <Content Include="images\resourceforecastbysite.png" />
+    <Content Include="images\resourceforecastbyskill.png" />
+    <Content Include="images\responsetimeadherancep1.png" />
+    <Content Include="images\responsetimeadherancep2.png" />
+    <Content Include="images\smile1.jpg" />
+    <Content Include="images\SolutionsInnovations.png" />
+    <Content Include="images\Southwest VI_design-09.jpg" />
+    <Content Include="images\Spent.png" />
+    <Content Include="images\srcompleted.png" />
+    <Content Include="images\staffingcompleted.png" />
+    <Content Include="images\SWA.png" />
+    <Content Include="images\SWA_07.jpg" />
+    <Content Include="images\swa_logo.jpg" />
+    <Content Include="images\valueAdd.png" />
+    <Content Include="images\WorkloadMixReport.png" />
+    <Content Include="images\Wyndham_Grantthornton_Icons-01.png" />
+    <Content Include="images\Wyndham_Grantthornton_Icons-02.png" />
+    <Content Include="images\Wyndham_Grantthornton_Icons-03.png" />
+    <Content Include="Index.html" />
+    <Content Include="Infobox.html" />
+    <Content Include="OperatingMetrics.html" />
+    <Content Include="OrgChart.html" />
+    <Content Include="ServiceLevelMetrics.html" />
+    <Content Include="sidebar.html" />
+    <Content Include="temp.html" />
+    <Content Include="Test.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bootstrap\css\bootstrap.css.map" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="worksheets\April.xlsx" />
+    <Content Include="worksheets\March.xlsx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>32135</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:32135/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

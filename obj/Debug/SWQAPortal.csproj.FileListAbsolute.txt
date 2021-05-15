@@ -1,0 +1,13 @@
+D:\Temp\SWQAPortal\SWQAPortal\bin\SWQAPortal.dll.config
+D:\Temp\SWQAPortal\SWQAPortal\bin\SWQAPortal.dll
+D:\Temp\SWQAPortal\SWQAPortal\bin\SWQAPortal.pdb
+D:\Temp\SWQAPortal\SWQAPortal\obj\Debug\SWQAPortal.csprojResolveAssemblyReference.cache
+D:\Temp\SWQAPortal\SWQAPortal\obj\Debug\SWQAPortal.dll
+D:\Temp\SWQAPortal\SWQAPortal\obj\Debug\SWQAPortal.pdb
+D:\Infosys Projects\SWQA\SWQAPortal\bin\SWQAPortal.dll.config
+D:\Infosys Projects\SWQA\SWQAPortal\bin\SWQAPortal.dll
+D:\Infosys Projects\SWQA\SWQAPortal\bin\SWQAPortal.pdb
+D:\Infosys Projects\SWQA\SWQAPortal\obj\Debug\SWQAPortal.csprojAssemblyReference.cache
+D:\Infosys Projects\SWQA\SWQAPortal\obj\Debug\SWQAPortal.csproj.CoreCompileInputs.cache
+D:\Infosys Projects\SWQA\SWQAPortal\obj\Debug\SWQAPortal.dll
+D:\Infosys Projects\SWQA\SWQAPortal\obj\Debug\SWQAPortal.pdb

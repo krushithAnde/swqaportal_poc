@@ -1,0 +1,1516 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Infosys Qualtity Dash Board</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <link href="bootstrap/css/customize-template.css" rel="stylesheet" />
+    
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="Slider/morris.css" rel="stylesheet" />
+    <link href="Slider/daterangepicker-bs3.css" rel="stylesheet" />
+    <link href="Slider/jquery-jvectormap-1.2.2.css" rel="stylesheet" />
+    <link href="dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="dist/css/skins/skin-blue.min.css" rel="stylesheet" type="text/css" />
+
+
+    <link href="Slider/jquery-ui.css" rel="stylesheet" />
+    <link href="Slider/jquery.nouislider.min.css" rel="stylesheet" />
+    <link href="Slider/jquery.nouislider.pips.min.css" rel="stylesheet" />
+    <link href="Slider/prism.css" rel="stylesheet" />
+
+    <link href="HeaderCSS/master.4.3.4.css" rel="stylesheet" />
+    <script src="HeaderCSS/cjo5ipu.js"></script>
+
+    <script type="text/javascript">
+        try {
+            Typekit.load();
+        } catch (e) { }
+    </script>
+    <script src="HeaderCSS/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript">
+        function load_content(div, obj, val) {
+            $("div.content-wrapper").hide();
+            document.getElementById(div).style.display = "block";
+        }
+    </script>
+    <script>
+        function showtable() {
+            $("#demandTable1").toggle();
+        }
+    </script>
+
+</head>
+
+
+<body class="skin-blue">
+    <div class="wrapper">
+
+
+        <div id="header">
+            <div class="">
+                <div class="menu">
+                    <a href="Index.html" class="logo">
+                        <span class="hidden-lg hidden-md"><img src="images/SWA_07.jpg" /></span>
+                        <span class="hidden-xs hidden-sm"><img src="images/SWA.png" class="vendorlogo" /></span>
+                    </a>
+                    <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+                    </a>
+                    <a class="menu-item" href="home.html">
+                        <img class="menuimage" src="images/Menu/Home.png" />
+                        <span class="info-box-text">Home</span>
+                    </a>
+                    <a class="menu-item" href="Orgchart.html">
+                        <img class="menuimage" src="images/Menu/orgchart.png" />
+                        <span class="info-box-text">Org Chart</span>
+                    </a>
+                    <a class="menu-item" href="OperatingMetrics.html">
+  
+                        <img class="menuimage" src="images/Menu/Performance.png" />
+                        <span class="info-box-text">Operational <br />  Reports  </span>
+                    </a>
+                    <a class="menu-item menu-item-app" href="ServiceLevelMetrics.html">
+                        <img class="menuimage" src="images/Menu/DemandManagement.png" />
+                        <span class="info-box-text">Service Level<br />  Reports </span>
+                    </a>
+                    <a class="menu-item menu-item-enterprise" href="FinancialMetrics.html">
+                        <img class="menuimage" src="images/Menu/Timesheet.png" />
+                        <span class="info-box-text">Financial <br />  Reports  </span>
+                    </a>
+                    <a class="menu-item menu-item-academy" href="Academy.html">
+                        <img class="menuimage" src="images/Menu/Academy.png" />
+                        <span class="info-box-text">Southwest <br /> Academy</span>
+                    </a>
+                    <a class="menu-item menu-item-awards hidden-xs" href="awardsappreciations.html">
+                        <img class="menuimage" src="images/Menu/Awards.png" />
+                        <span class="info-box-text">Awards &<br /> Appreciations</span>
+                    </a>
+                    <div class="menu-item hidden-sm hidden-xs">
+                        <img src="images/infosys.png" class="right-image" />
+                    </div>
+                    <div class="menu-item user user-menu  hidden-sm hidden-xs">
+                        <div style="margin-top: 20px;" class="hoveruser">
+                   
+                            <a href="#" class="user user-menu dropdown-toggle" data-toggle="dropdown">
+          
+                                <img src="images/Kshithiji.jpg" class="user-image" alt="User Image" />
+    
+                                <span class="hidden-xs">Kshitij Kamal</span>
+                            </a>
+           
+                        </div>
+                    </div>
+                    <div class="menu-select">
+                        <form>
+                            <select onchange="location = this.options[this.selectedIndex].value;">
+                                <option value="/">Home</option>
+                                <option value="Orgchart.html">Org Chart</option>
+
+                                <option value="OperatingMetrics.html">Operating Metrics </option>
+
+                                <option value="ServiceLevelMetrics.html">Service Level Metrics</option>
+
+                                <option value="FinancialMetrics.html">Financial Metrics</option>
+
+                                <option value="Academy.html">Southwest Academy</option>
+
+                                <option value="awardsappreciations.html">Awards & Appreciations</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <div class="dropdown dropdown-about">
+
+                </div>
+                <div class="dropdown dropdown-developer">
+
+                </div>
+                <div class="dropdown dropdown-community">
+
+                </div>
+                <div class="dropdown dropdown-app">
+
+                </div>
+                <div class="dropdown dropdown-enterprise">
+
+                </div>
+                <script type="text/javascript">
+                    function activateDropDown(target, height) {
+                        var animate = true;
+                        var prefix = '.dropdown-' + target;
+                        var menuPrefix = '.menu-item-' + target;
+                        var menu = $(prefix);
+                        var height = 0;
+                        height = $(prefix + ' .inner').height() + 4 + 4 + 8;
+
+                        $(prefix + ', ' + '.menu-item-' + target).hover(function (r) {
+                            var item = $(this);
+                            if (item[0].className && item[0].className.indexOf('menu') > -1) {
+                                var left = item.position().left;
+                                menu.css('left', left + 'px');
+                                menu.clearQueue().animate({
+                                    height: height + 'px'
+                                }, 200);
+                                $(menuPrefix).addClass('active')
+                            }
+                            animate = false;
+                            setTimeout(function () {
+                                animate = true;
+                            }, 1);
+                            menu.css('display', 'block');
+                        }, function (r) {
+                            setTimeout(function () {
+                                if (animate) {
+                                    menu.animate({
+                                        height: '0px'
+                                    }, 200);
+                                    $(menuPrefix).removeClass('active');
+                                }
+                            }, 0);
+                        });
+                    }
+
+                    activateDropDown('Home');
+
+                    activateDropDown('Orgchart');
+
+                    activateDropDown('ProgramMetrics');
+
+                    activateDropDown('DemandManagement');
+
+                    activateDropDown('Timesheet & Invoices');
+
+                    activateDropDown('Academy');
+
+                    activateDropDown('Awards & Appreciations');
+                </script>
+            </div>
+        </div>
+
+  
+        <aside class="main-sidebar">
+            <section class="sidebar">
+  
+                <ul class="sidebar-menu">
+                    <li class="header">Service Level Reports</li>
+
+                    <li class="treeview">
+                        <a href="#"><span>Service Level Performance</span> <i class="fa fa-angle-left pull-right"></i></a>
+                        <ul class="treeview-menu">
+                            <li class="treeview">
+                                <a href="#"><span>Project Performance</span> <i class="fa fa-angle-left pull-right"></i></a>
+                                <ul class="treeview-menu">
+                                    <li onclick="load_content('deliverablescompleted',this);">
+                                        <a href="#">Deliverables Completed</a>
+                                    </li>
+                                    <li>
+                                        <a>CR Estimates Completed</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="treeview">
+                                <a href="#"><span>Incident Management</span> <i class="fa fa-angle-left pull-right"></i></a>
+                                <ul class="treeview-menu">
+                                    <li onclick="load_content('responsetimeadherance',this);">
+                                        <a href="#">Response time Adherance</a>
+                                    </li>
+                                    <li onclick="load_content('resolutiontimeadherance',this);">
+                                        <a href="#">Resolution time Adherance</a>
+                                    </li>
+                                    <li onclick="load_content('responsetimeaverage',this);">
+                                        <a href="#">Response time Average</a>
+                                    </li>
+                                    <li onclick="load_content('resolutiontimeaverage',this);">
+                                        <a href="#">Resolution time Average</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="treeview">
+                                <a href="#"><span>Timeliness / Application Availability </span> <i class="fa fa-angle-left pull-right"></i></a>
+                                <ul class="treeview-menu">
+                                    <li onclick="load_content('criticalbatchcompleted',this);">
+                                        <a href="#">Critical Batch Completed</a>
+                                    </li>
+                                    <li onclick="load_content('rcacompleted',this);">
+                                        <a href="#">RCA Completed</a>
+                                    </li>
+                                    <li>
+                                        <a>Work Orders Completed</a>
+                                    </li>
+                                    <li onclick="load_content('srcompleted',this);">
+                                        <a href="#">SR's Completed</a>
+                                    </li>
+                                    <li onclick="load_content('incidentclosed',this);">
+                                        <a href="#">Incident Closure Quality</a>
+                                    </li>
+                                    <li>
+                                        <a>No Outage Application</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="treeview">
+                                <a href="#"><span>Resource Management</span> <i class="fa fa-angle-left pull-right"></i></a>
+                                <ul class="treeview-menu">
+                                    <li onclick="load_content('staffingcompleted',this);">
+                                        <a href="#">Staffing Requests Completed on Time</a>
+                                    </li>
+                                    <li>
+                                        <a>Resource Retention Rate</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="treeview">
+                                <a href="#"><span>Quality Managment</span> <i class="fa fa-angle-left pull-right"></i></a>
+                                <ul class="treeview-menu">
+                                    <li onclick="load_content('defectdensity',this);">
+                                        <a href="#">Defect Density</a>
+                                    </li>
+                                    <li>
+                                        <a>Percentage of Rework</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview">
+                        <a href="#"><span>Problem Managment</span> <i class="fa fa-angle-left pull-right"></i></a>
+                        <ul class="treeview-menu">
+                         
+                            <li onclick="load_content('problemidentified', this);">
+                                <a href="#">Problem identified vs resolved</a>
+                            </li>
+                            <li onclick="load_content('problembytype', this);">
+                                <a href="#">Problem report by type</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </section>
+        </aside>
+
+
+
+        <div class="content-wrapper">
+            <section class="content-header"></section>
+            <section class="content">
+                <div>
+                    <img src="images/Dashboard.jpg" class="dashboardimg" />
+                </div>
+            </section>
+        </div>
+
+        <div class="content-wrapper" id="report4" style="display:none;">
+
+            <section class="content-header"></section>
+
+            <section class="content">
+
+                <div>
+                    <div id="repor4">
+                        <div class="row">
+                            <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-4 ">
+                                <label class="labelsubhead">Response Time Adherance</label>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row">
+
+                            <div class="col-sm-2 col-sm-offset-6">
+                                <label>
+                                    Start Date
+                                    <br />
+                                    <span class="start">01-01-2015</span>
+                                </label>
+                            </div>
+
+                            <div class="col-sm-2">
+                                <div class="quick">
+                                    <div class="slider"></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <label>
+                                    End Date
+                                    <br />
+                                    <span class="end">01-31-2015</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div>
+    
+                                <div class="col-sm-8 col-sm-offset-1 col-md-9 col-md-offset-2">
+                                    <div>
+                                        <img src="images/Slide7.PNG" alt="Profile Pic" class="imgalignc" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-6">
+                                <label style="font-size:12px;"><b>Note*:</b> Application Product Familys with no demands are not displayed here.</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-7"></div>
+                            <div class="col-sm-3">
+                                <button class="btn btn-info buttonPDf">Export to PDF</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <div class="content-wrapper" id="responsetimeadherance" style="display:none;">
+            <section class="content-header"></section>
+            <section class="content">
+
+                <div class="row">
+                    <div class="col-centered">
+                        <p class="text-center labelsubhead">Response Time Adherance</p>
+                    </div>
+                </div>
+ 
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Application Product Family &nbsp;</span>
+                                <div>
+                                    <select id="select3">
+                                        <option>Aircraft Operations</option>
+                                        <option>Airport Operations</option>
+                                        <option>Crew</option>
+                                        <option>CRM & Marketing</option>
+                                        <option>Customer Service Operations</option>
+                                        <option>Data</option>
+                                        <option>Dev Solutions</option>
+                                        <option>Enterprise Management</option>
+                                        <option>Enterprise Management - BI</option>
+                                        <option>Interactive Customer</option>
+                                        <option>Maintenance</option>
+                                        <option>Network and Revenue Management</option>
+                                        <option>Ops Solutions</option>
+                                        <option>Reservation Services</option>
+                                        <option>Sales and Distribution</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <span>Criticality &nbsp;</span>
+                                <div>
+                                    <select id="select4">
+
+                                        <option>Gold</option>
+                                        <option>Silver</option>
+                                        <option>Bronze</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="sliderwrapper">
+								<label
+									class="lblstartdate">
+									Start Date <br /> <span class="start spandate">01-01-2015</span>
+								</label>
+								<div class="quick" style="margin-left: 175px; margin-top: -5px;">
+									<div class="slider"></div>
+								</div>
+								<label
+									class="lblenddate">
+									End Date <br /> <span class="end spandate">01-31-2015</span>
+								</label>
+							</div>
+
+                        </div>
+
+                    </div>
+                </div>
+ 
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <img src="images/responsetimeadherancep1.png" alt="P1 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                        <img src="images/responsetimeadherancep2.png" alt="P2 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                        <img src="images/responsetimeadherancep3.png" alt="P3 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                        <img src="images/responsetimeadherancep4.png" alt="P4 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-8 col-sm-offset-1 col-md-9 col-md-offset-2">
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+
+        <div class="content-wrapper" id="resolutiontimeadherance" style="display:none;">
+            <section class="content-header"></section>
+            <section class="content">
+     
+                <div class="row">
+                    <div class="col-centered">
+                        <p class="text-center labelsubhead">Resolution Time Adherance Report</p>
+                    </div>
+                </div>
+  
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Application Product Family &nbsp;</span>
+                                <div>
+                                    <select id="select3">
+                                        <option>Aircraft Operations</option>
+                                        <option>Airport Operations</option>
+                                        <option>Crew</option>
+                                        <option>CRM & Marketing</option>
+                                        <option>Customer Service Operations</option>
+                                        <option>Data</option>
+                                        <option>Dev Solutions</option>
+                                        <option>Enterprise Management</option>
+                                        <option>Enterprise Management - BI</option>
+                                        <option>Interactive Customer</option>
+                                        <option>Maintenance</option>
+                                        <option>Network and Revenue Management</option>
+                                        <option>Ops Solutions</option>
+                                        <option>Reservation Services</option>
+                                        <option>Sales and Distribution</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <span>Criticality &nbsp;</span>
+                                <div>
+                                    <select id="select4">
+                                        <option>Gold</option>
+                                        <option>Silver</option>
+                                        <option>Bronze</option>
+                                    </select>
+                                </div>
+                            </div>
+                           
+
+                          <div class="sliderwrapper">
+								<label
+									class="lblstartdate">
+									Start Date <br /> <span class="start spandate">01-01-2015</span>
+								</label>
+								<div class="quick" style="margin-left: 175px; margin-top: -5px;">
+									<div class="slider"></div>
+								</div>
+								<label
+									class="lblenddate">
+									End Date <br /> <span class="end spandate">01-31-2015</span>
+								</label>
+							</div>
+
+                        </div>
+
+                    </div>
+                </div>
+     
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <img src="images/resolutiontimeadherancep1.png" alt="P1 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                        <img src="images/resolutiontimeadherancep2.png" alt="P2 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                        <img src="images/resolutiontimeadherancep3.png" alt="P2 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                        <img src="images/resolutiontimeadherancep4.png" alt="P2 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-8 col-sm-offset-1 col-md-9 col-md-offset-2">
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+
+        <div class="content-wrapper" id="responsetimeaverage" style="display:none;">
+            <section class="content-header"></section>
+            <section class="content">
+    
+                <div class="row">
+                    <div class="col-centered">
+                        <p class="text-center labelsubhead">Response Time Average Report</p>
+                    </div>
+                </div>
+     
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Application Product Family &nbsp;</span>
+                                <div>
+                                    <select id="select3">
+                                        <option>Aircraft Operations</option>
+                                        <option>Airport Operations</option>
+                                        <option>Crew</option>
+                                        <option>CRM & Marketing</option>
+                                        <option>Customer Service Operations</option>
+                                        <option>Data</option>
+                                        <option>Dev Solutions</option>
+                                        <option>Enterprise Management</option>
+                                        <option>Enterprise Management - BI</option>
+                                        <option>Interactive Customer</option>
+                                        <option>Maintenance</option>
+                                        <option>Network and Revenue Management</option>
+                                        <option>Ops Solutions</option>
+                                        <option>Reservation Services</option>
+                                        <option>Sales and Distribution</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <span>Criticality &nbsp;</span>
+                                <div>
+                                    <select id="select4">
+                                        <option>Gold</option>
+                                        <option>Silver</option>
+                                        <option>Bronze</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                          <div class="sliderwrapper">
+								<label
+									class="lblstartdate">
+									Start Date <br /> <span class="start spandate">01-01-2015</span>
+								</label>
+								<div class="quick" style="margin-left: 175px; margin-top: -5px;">
+									<div class="slider"></div>
+								</div>
+								<label
+									class="lblenddate">
+									End Date <br /> <span class="end spandate">01-31-2015</span>
+								</label>
+							</div>
+
+                        </div>
+
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <img src="images/avgresponsetimep1.png" alt="P1 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                        <img src="images/avgresponsetimep2.png" alt="P2 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                    </div>
+                    <div class="col-md-12 col-sm-offset-1">
+                        <img src="images/avgresponsetimep3.png" alt="P3 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                        <img src="images/avgresponsetimep4.png" alt="P2 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                    </div>
+                </div>
+  
+                <div class="row">
+           
+                    <div class="col-sm-8 col-sm-offset-1 col-md-9 col-md-offset-2">
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+  
+        <div class="content-wrapper" id="resolutiontimeaverage" style="display:none;">
+            <section class="content-header"></section>
+            <section class="content">
+  
+                <div class="row">
+                    <div class="col-centered">
+                        <p class="text-center labelsubhead">Resolution Time Average Report</p>
+                    </div>
+                </div>
+           
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Application Product Family &nbsp;</span>
+                                <div>
+                                    <select id="select3">
+                                        <option>Aircraft Operations</option>
+                                        <option>Airport Operations</option>
+                                        <option>Crew</option>
+                                        <option>CRM & Marketing</option>
+                                        <option>Customer Service Operations</option>
+                                        <option>Data</option>
+                                        <option>Dev Solutions</option>
+                                        <option>Enterprise Management</option>
+                                        <option>Enterprise Management - BI</option>
+                                        <option>Interactive Customer</option>
+                                        <option>Maintenance</option>
+                                        <option>Network and Revenue Management</option>
+                                        <option>Ops Solutions</option>
+                                        <option>Reservation Services</option>
+                                        <option>Sales and Distribution</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <span>Criticality &nbsp;</span>
+                                <div>
+                                    <select id="select4">
+
+                                        <option>Gold</option>
+                                        <option>Silver</option>
+                                        <option>Bronze</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="sliderwrapper">
+								<label
+									class="lblstartdate">
+									Start Date <br /> <span class="start spandate">01-01-2015</span>
+								</label>
+								<div class="quick" style="margin-left: 175px; margin-top: -5px;">
+									<div class="slider"></div>
+								</div>
+								<label
+									class="lblenddate">
+									End Date <br /> <span class="end spandate">01-31-2015</span>
+								</label>
+							</div>
+
+                        </div>
+
+                    </div>
+                </div>
+  
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <img src="images/avgresolutiontimep1.png" alt="P1 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                        <img src="images/avgresolutiontimep2.png" alt="P2 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                    </div>
+                    <div class="col-md-12 col-sm-offset-1">
+                        <img src="images/avgresolutiontimep3.png" alt="P1 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                        <img src="images/avgresolutiontimep4.png" alt="P2 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                    </div>
+                </div>
+ 
+                <div class="row">
+
+                    <div class="col-sm-8 col-sm-offset-1 col-md-9 col-md-offset-2">
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+
+        <div class="content-wrapper" id="defectdensity" style="display:none;">
+            <section class="content-header"></section>
+            <section class="content">
+    
+                <div class="row">
+                    <div class="col-centered">
+                        <p class="text-center labelsubhead">Defect Density</p>
+                    </div>
+                </div>
+ 
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Application Product Family &nbsp;</span>
+                                <div>
+                                    <select id="select3">
+                                        <option>Aircraft Operations</option>
+                                        <option>Airport Operations</option>
+                                        <option>Crew</option>
+                                        <option>CRM & Marketing</option>
+                                        <option>Customer Service Operations</option>
+                                        <option>Data</option>
+                                        <option>Dev Solutions</option>
+                                        <option>Enterprise Management</option>
+                                        <option>Enterprise Management - BI</option>
+                                        <option>Interactive Customer</option>
+                                        <option>Maintenance</option>
+                                        <option>Network and Revenue Management</option>
+                                        <option>Ops Solutions</option>
+                                        <option>Reservation Services</option>
+                                        <option>Sales and Distribution</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <span>Severity &nbsp;</span>
+                                <div>
+                                    <select id="select4">
+
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                           <div class="sliderwrapper">
+								<label
+									class="lblstartdate">
+									Start Date <br /> <span class="start spandate">01-01-2015</span>
+								</label>
+								<div class="quick" style="margin-left: 175px; margin-top: -5px;">
+									<div class="slider"></div>
+								</div>
+								<label
+									class="lblenddate">
+									End Date <br /> <span class="end spandate">01-31-2015</span>
+								</label>
+							</div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+ 
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <img src="images/defectdensity.png" alt="P1 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                    </div>
+
+                </div>
+ 
+                <div class="row">
+            
+                    <div class="col-sm-8 col-sm-offset-1 col-md-9 col-md-offset-2">
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+ 
+        <div class="content-wrapper" id="deliverablescompleted" style="display:none;">
+            <section class="content-header"></section>
+            <section class="content">
+          
+                <div class="row">
+                    <div class="col-centered">
+                        <p class="text-center labelsubhead">Deliverables Completed On-Time</p>
+                    </div>
+                </div>
+      
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Application Product Family &nbsp;</span>
+                                <div>
+                                    <select id="select3">
+                                        <option>Aircraft Operations</option>
+                                        <option>Airport Operations</option>
+                                        <option>Crew</option>
+                                        <option>CRM & Marketing</option>
+                                        <option>Customer Service Operations</option>
+                                        <option>Data</option>
+                                        <option>Dev Solutions</option>
+                                        <option>Enterprise Management</option>
+                                        <option>Enterprise Management - BI</option>
+                                        <option>Interactive Customer</option>
+                                        <option>Maintenance</option>
+                                        <option>Network and Revenue Management</option>
+                                        <option>Ops Solutions</option>
+                                        <option>Reservation Services</option>
+                                        <option>Sales and Distribution</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                                                      
+                            <div class="sliderwrapper">
+								<label
+									class="lblstartdate">
+									Start Date <br /> <span class="start spandate">01-01-2015</span>
+								</label>
+								<div class="quick" style="margin-left: 175px; margin-top: -5px;">
+									<div class="slider"></div>
+								</div>
+								<label
+									class="lblenddate">
+									End Date <br /> <span class="end spandate">01-31-2015</span>
+								</label>
+							</div>
+
+                        </div>
+
+                    </div>
+                </div>
+ 
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <img src="images/deliverablescompleted.png" alt="P1 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                    </div>
+
+                </div>
+         
+                <div class="row">
+      
+                    <div class="col-sm-8 col-sm-offset-1 col-md-9 col-md-offset-2">
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+
+        <div class="content-wrapper" id="rcacompleted" style="display:none;">
+            <section class="content-header"></section>
+            <section class="content">
+ 
+                <div class="row">
+                    <div class="col-centered">
+                        <p class="text-center labelsubhead">RCA Completed On-Time</p>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Application Product Family &nbsp;</span>
+                                <div>
+                                    <select id="select3">
+                                        <option>Aircraft Operations</option>
+                                        <option>Airport Operations</option>
+                                        <option>Crew</option>
+                                        <option>CRM & Marketing</option>
+                                        <option>Customer Service Operations</option>
+                                        <option>Data</option>
+                                        <option>Dev Solutions</option>
+                                        <option>Enterprise Management</option>
+                                        <option>Enterprise Management - BI</option>
+                                        <option>Interactive Customer</option>
+                                        <option>Maintenance</option>
+                                        <option>Network and Revenue Management</option>
+                                        <option>Ops Solutions</option>
+                                        <option>Reservation Services</option>
+                                        <option>Sales and Distribution</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <span>Severity &nbsp;</span>
+                                <div>
+                                    <select id="select4">
+
+                                        <option>Critical</option>
+										<option selected="selected">High</option>
+										<option>Medium</option>
+										<option>Low</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                           <div class="sliderwrapper">
+								<label
+									class="lblstartdate">
+									Start Date <br /> <span class="start spandate">01-01-2015</span>
+								</label>
+								<div class="quick" style="margin-left: 175px; margin-top: -5px;">
+									<div class="slider"></div>
+								</div>
+								<label
+									class="lblenddate">
+									End Date <br /> <span class="end spandate">01-31-2015</span>
+								</label>
+							</div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <img src="images/rcacompleted.png" alt="P1 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                    </div>
+
+                </div>
+     
+                <div class="row">
+     
+                    <div class="col-sm-8 col-sm-offset-1 col-md-9 col-md-offset-2">
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+
+        <div class="content-wrapper" id="srcompleted" style="display:none;">
+            <section class="content-header"></section>
+            <section class="content">
+          
+                <div class="row">
+                    <div class="col-centered">
+                        <p class="text-center labelsubhead">Service Requests Completed On-Time</p>
+                    </div>
+                </div>
+               
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Application Product Family &nbsp;</span>
+                                <div>
+                                    <select id="select3">
+                                        <option>Aircraft Operations</option>
+                                        <option>Airport Operations</option>
+                                        <option>Crew</option>
+                                        <option>CRM & Marketing</option>
+                                        <option>Customer Service Operations</option>
+                                        <option>Data</option>
+                                        <option>Dev Solutions</option>
+                                        <option>Enterprise Management</option>
+                                        <option>Enterprise Management - BI</option>
+                                        <option>Interactive Customer</option>
+                                        <option>Maintenance</option>
+                                        <option>Network and Revenue Management</option>
+                                        <option>Ops Solutions</option>
+                                        <option>Reservation Services</option>
+                                        <option>Sales and Distribution</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <span>Severity &nbsp;</span>
+                                <div>
+                                    <select id="select4">
+
+                                        <option>High</option>
+                                        <option>Medium</option>
+                                        <option>Low</option>
+                                        
+
+                                    </select>
+                                </div>
+                            </div>
+                           <div class="sliderwrapper">
+								<label
+									class="lblstartdate">
+									Start Date <br /> <span class="start spandate">01-01-2015</span>
+								</label>
+								<div class="quick" style="margin-left: 175px; margin-top: -5px;">
+									<div class="slider"></div>
+								</div>
+								<label
+									class="lblenddate">
+									End Date <br /> <span class="end spandate">01-31-2015</span>
+								</label>
+							</div>
+
+                        </div>
+
+                    </div>
+                </div>
+             
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <img src="images/srcompleted.png" alt="P1 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                    </div>
+
+                </div>
+               
+                <div class="row">
+                   
+                    <div class="col-sm-8 col-sm-offset-1 col-md-9 col-md-offset-2">
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+    
+        <div class="content-wrapper" id="incidentclosed" style="display:none;">
+            <section class="content-header"></section>
+            <section class="content">
+           
+                <div class="row">
+                    <div class="col-centered">
+                        <p class="text-center labelsubhead">Incident Closure Quality</p>
+                    </div>
+                </div>
+               
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Application Product Family &nbsp;</span>
+                                <div>
+                                    <select id="select3">
+                                        <option>Aircraft Operations</option>
+                                        <option>Airport Operations</option>
+                                        <option>Crew</option>
+                                        <option>CRM & Marketing</option>
+                                        <option>Customer Service Operations</option>
+                                        <option>Data</option>
+                                        <option>Dev Solutions</option>
+                                        <option>Enterprise Management</option>
+                                        <option>Enterprise Management - BI</option>
+                                        <option>Interactive Customer</option>
+                                        <option>Maintenance</option>
+                                        <option>Network and Revenue Management</option>
+                                        <option>Ops Solutions</option>
+                                        <option>Reservation Services</option>
+                                        <option>Sales and Distribution</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <span>Severity &nbsp;</span>
+                                <div>
+                                    <select id="select4">
+										<option>Critical</option>
+                                        <option>High</option>
+                                        <option>Medium</option>
+                                        <option>Low</option>
+                                       
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="sliderwrapper">
+								<label
+									class="lblstartdate">
+									Start Date <br /> <span class="start spandate">01-01-2015</span>
+								</label>
+								<div class="quick" style="margin-left: 175px; margin-top: -5px;">
+									<div class="slider"></div>
+								</div>
+								<label
+									class="lblenddate">
+									End Date <br /> <span class="end spandate">01-31-2015</span>
+								</label>
+							</div>
+
+                        </div>
+
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <img src="images/incidentclosed.png" alt="P1 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                    </div>
+
+                </div>
+            
+                <div class="row">
+              
+                    <div class="col-sm-8 col-sm-offset-1 col-md-9 col-md-offset-2">
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+       
+        <div class="content-wrapper" id="staffingcompleted" style="display:none;">
+            <section class="content-header"></section>
+            <section class="content">
+              
+                <div class="row">
+                    <div class="col-centered">
+                        <p class="text-center labelsubhead">Staffing Requests Completed On-Time</p>
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Application Product Family &nbsp;</span>
+                                <div>
+                                    <select id="select3">
+                                        <option>Aircraft Operations</option>
+                                        <option>Airport Operations</option>
+                                        <option>Crew</option>
+                                        <option>CRM & Marketing</option>
+                                        <option>Customer Service Operations</option>
+                                        <option>Data</option>
+                                        <option>Dev Solutions</option>
+                                        <option>Enterprise Management</option>
+                                        <option>Enterprise Management - BI</option>
+                                        <option>Interactive Customer</option>
+                                        <option>Maintenance</option>
+                                        <option>Network and Revenue Management</option>
+                                        <option>Ops Solutions</option>
+                                        <option>Reservation Services</option>
+                                        <option>Sales and Distribution</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="sliderwrapper">
+								<label
+									class="lblstartdate">
+									Start Date <br /> <span class="start spandate">01-01-2015</span>
+								</label>
+								<div class="quick" style="margin-left: 175px; margin-top: -5px;">
+									<div class="slider"></div>
+								</div>
+								<label
+									class="lblenddate">
+									End Date <br /> <span class="end spandate">01-31-2015</span>
+								</label>
+							</div>
+
+                        </div>
+
+                    </div>
+                </div>
+             
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <img src="images/staffingcompleted.png" alt="P1 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                    </div>
+
+                </div>
+              
+                <div class="row">
+                 
+                    <div class="col-sm-8 col-sm-offset-1 col-md-9 col-md-offset-2">
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        
+        <div class="content-wrapper" id="criticalbatchcompleted" style="display:none;">
+            <section class="content-header"></section>
+            <section class="content">
+              
+                <div class="row">
+                    <div class="col-centered">
+                        <p class="text-center labelsubhead">Critical Batch Completed On-Time</p>
+                    </div>
+                </div>
+               
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Application Product Family &nbsp;</span>
+                                <div>
+                                    <select id="select3">
+                                        <option>Aircraft Operations</option>
+                                        <option>Airport Operations</option>
+                                        <option>Crew</option>
+                                        <option>CRM & Marketing</option>
+                                        <option>Customer Service Operations</option>
+                                        <option>Data</option>
+                                        <option>Dev Solutions</option>
+                                        <option>Enterprise Management</option>
+                                        <option>Enterprise Management - BI</option>
+                                        <option>Interactive Customer</option>
+                                        <option>Maintenance</option>
+                                        <option>Network and Revenue Management</option>
+                                        <option>Ops Solutions</option>
+                                        <option>Reservation Services</option>
+                                        <option>Sales and Distribution</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="sliderwrapper">
+								<label
+									class="lblstartdate">
+									Start Date <br /> <span class="start spandate">01-01-2015</span>
+								</label>
+								<div class="quick" style="margin-left: 175px; margin-top: -5px;">
+									<div class="slider"></div>
+								</div>
+								<label
+									class="lblenddate">
+									End Date <br /> <span class="end spandate">01-31-2015</span>
+								</label>
+							</div>
+
+                        </div>
+
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <img src="images/criticalbatchcompleted.png" alt="P1 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                    </div>
+
+                </div>
+              
+                <div class="row">
+                
+                    <div class="col-sm-8 col-sm-offset-1 col-md-9 col-md-offset-2">
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        
+ 
+        <div class="content-wrapper" id="problemidentified" style="display:none;">
+            <section class="content-header"></section>
+            <section class="content">
+             
+                <div class="row">
+                    <div class="col-centered">
+                        <p class="text-center labelsubhead">Problem Identified Vs Resolved</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Application Product Family &nbsp;</span>
+                                <div>
+                                    <select id="select3">
+                                        <option>Aircraft Operations</option>
+                                        <option>Airport Operations</option>
+                                        <option>Crew</option>
+                                        <option>CRM & Marketing</option>
+                                        <option>Customer Service Operations</option>
+                                        <option>Data</option>
+                                        <option>Dev Solutions</option>
+                                        <option>Enterprise Management</option>
+                                        <option>Enterprise Management - BI</option>
+                                        <option>Interactive Customer</option>
+                                        <option>Maintenance</option>
+                                        <option>Network and Revenue Management</option>
+                                        <option>Ops Solutions</option>
+                                        <option>Reservation Services</option>
+                                        <option>Sales and Distribution</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <span>Severity &nbsp;</span>
+                                <div>
+                                    <select id="select4">
+
+                                        <option>Critical</option>
+										<option selected="selected">High</option>
+										<option>Medium</option>
+										<option>Low</option>
+
+									</select>
+                                </div>
+                            </div>
+                            <div class="sliderwrapper">
+								<label
+									class="lblstartdate">
+									Start Date <br /> <span class="start spandate">01-01-2015</span>
+								</label>
+								<div class="quick" style="margin-left: 175px; margin-top: -5px;">
+									<div class="slider"></div>
+								</div>
+								<label
+									class="lblenddate">
+									End Date <br /> <span class="end spandate">01-31-2015</span>
+								</label>
+							</div>
+
+                        </div>
+
+                    </div>
+                </div>
+              
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <img src="images/problemresolved.png" alt="P1 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                    </div>
+
+                </div>
+            
+                <div class="row">
+                   
+                    <div class="col-sm-8 col-sm-offset-1 col-md-9 col-md-offset-2">
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+     
+        <div class="content-wrapper" id="problembytype" style="display:none;">
+            <section class="content-header"></section>
+            <section class="content">
+              
+                <div class="row">
+                    <div class="col-centered">
+                        <p class="text-center labelsubhead">Problem By Type</p>
+                    </div>
+                </div>
+               
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Application Product Family &nbsp;</span>
+                                <div>
+                                    <select id="select3">
+                                        <option>Aircraft Operations</option>
+                                        <option>Airport Operations</option>
+                                        <option>Crew</option>
+                                        <option>CRM & Marketing</option>
+                                        <option>Customer Service Operations</option>
+                                        <option>Data</option>
+                                        <option>Dev Solutions</option>
+                                        <option>Enterprise Management</option>
+                                        <option>Enterprise Management - BI</option>
+                                        <option>Interactive Customer</option>
+                                        <option>Maintenance</option>
+                                        <option>Network and Revenue Management</option>
+                                        <option>Ops Solutions</option>
+                                        <option>Reservation Services</option>
+                                        <option>Sales and Distribution</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <span>Severity &nbsp;</span>
+                                <div>
+                                    <select id="select4">
+
+                                       <option>Critical</option>
+										<option selected="selected">High</option>
+										<option>Medium</option>
+										<option>Low</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                           <div class="sliderwrapper">
+								<label
+									class="lblstartdate">
+									Start Date <br /> <span class="start spandate">01-01-2015</span>
+								</label>
+								<div class="quick" style="margin-left: 175px; margin-top: -5px;">
+									<div class="slider"></div>
+								</div>
+								<label
+									class="lblenddate">
+									End Date <br /> <span class="end spandate">01-31-2015</span>
+								</label>
+							</div>
+
+                        </div>
+
+                    </div>
+                </div>
+               
+                <div class="row">
+                    <div class="col-md-12 col-sm-offset-1">
+                        <img src="images/problembytype.png" alt="P1 Incidents" style=" height:100%;margin-top:10px;padding-top: 15px;padding-right:20px" />
+                    </div>
+
+                </div>
+             
+                <div class="row">
+              
+                    <div class="col-sm-8 col-sm-offset-1 col-md-9 col-md-offset-2">
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+       
+        <footer class="main-footer">
+          
+            <strong>Copyright &copy; 2015 <a href="www.infosys.com">Infosys Technologies</a>.</strong> All rights reserved.
+        </footer>
+
+    </div>
+   
+    <script src="dist/jQuery/jQuery-2.1.3.min.js"></script>
+  
+    <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="bootstrap/js/bootstrap-datepicker.js" type="text/javascript"></script>
+   
+    <script src="dist/js/app.min.js" type="text/javascript"></script>
+
+  
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //$('#startdate').datepicker();
+            //$('#enddate').datepicker();
+            //$('#startdate').datepicker();
+            //$('#enddate').datepicker();
+            //$('#startdate').datepicker();
+            //$('#enddate').datepicker();
+            $('#rp4startdate').datepicker();
+            $('#rp4enddate').datepicker();
+        });
+    </script>
+
+
+    <script src="Slider/bootstrap.min.js"></script>
+    <script src="Slider/fastclick.min.js"></script>
+    <!--<script src="Slider/app.min.js"></script>-->
+    <script src="Slider/jquery.sparkline.min.js"></script>
+    <script src="Slider/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="Slider/jquery-jvectormap-world-mill-en.js"></script>
+
+    <script src="Slider/daterangepicker.js"></script>
+    <script src="Slider/bootstrap-datepicker.js"></script>
+    <script src="Slider/icheck.min.js"></script>
+    <script src="Slider/jquery.slimscroll.min.js"></script>
+    <script src="Slider/Chart.min.js"></script>
+    <script src="Slider/dashboard2.js"></script>
+
+    <script src="Slider/jquery-ui.js"></script>
+    <script src="Slider/jquery.nouislider.all.js"></script>
+    <script src="Slider/slider.js"></script>
+
+   
+
+</body>
+
+</html>
